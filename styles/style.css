@@ -46,6 +46,36 @@ main {
 section {
   margin-bottom: 2.5rem;
 }
+
+/* Home page vertical links styling */
+.home-links {
+  position: absolute;
+  top: 38%; /* slightly above center */
+  left: 18%; /* slightly left of center */
+  transform: translate(-18%, -38%);
+  /* Adjust as needed for your preference */
+}
+.home-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.home-links a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.home-links a:focus,
+.home-links a:hover {
+  color: #0078d4;
+  outline: none;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -53,6 +83,14 @@ section {
   }
   main {
     margin: 1rem 0;
+  }
+  .home-links {
+    top: 28%;
+    left: 10%;
+    transform: translate(-10%, -28%);
+  }
+  .home-links a {
+    font-size: 1.1rem;
   }
 }
 /* ...add more styles as needed, keep minimal */
