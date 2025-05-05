@@ -1,0 +1,58 @@
+/* Minimal, mobile-first, accessible CSS for portfolio */
+
+html {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  background: #fff;
+  color: #111;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+nav {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  padding: 0.25rem 0;
+}
+nav a:focus {
+  outline: 2px solid #0078d4;
+  outline-offset: 2px;
+}
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  main {
+    margin: 1rem 0;
+  }
+}
+/* ...add more styles as needed, keep minimal */
