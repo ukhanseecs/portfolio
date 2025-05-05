@@ -2,13 +2,19 @@
 
 html {
   box-sizing: border-box;
-  font-family: system-ui, sans-serif;
+  font-family: 'Inter', 'Roboto', system-ui, sans-serif;
   background: #fff;
-  color: #111;
+  color: #0a2342; /* dark blue */
   scroll-behavior: smooth;
+  font-size: 15px; /* smaller base font size */
+  text-transform: lowercase; /* all text lowercase */
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, nav, a, li, header, section, main, ul {
+  text-transform: inherit;
+  font-size: inherit;
 }
 body {
   margin: 0;
@@ -65,7 +71,7 @@ section {
 }
 .home-links a {
   text-decoration: none;
-  color: inherit;
+  color: #0a2342; /* dark blue for links */
   font-size: 1.5rem;
   font-weight: 500;
   transition: color 0.2s;
@@ -85,7 +91,7 @@ section {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: #222;
+  color: #0a2342; /* dark blue for header */
   background: none;
   padding: 0.25rem 0.5rem;
   z-index: 10;
