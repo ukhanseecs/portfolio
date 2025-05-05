@@ -171,6 +171,27 @@ section {
   font-size: 1rem;
 }
 
+/* Embedded iframe and fallback styling */
+.project-embed {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  margin: 2.5rem 0 1.5rem 0;
+  display: block;
+}
+.project-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  min-height: 340px;
+}
+.project-mobile-fallback {
+  display: none;
+  margin: 1.5rem 0 0 0;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -200,6 +221,9 @@ section {
     width: 260px;
     max-width: 70vw;
   }
+  .project-embed {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -212,6 +236,12 @@ section {
     width: 100%;
     max-width: 100%;
     margin-bottom: 0.5rem;
+  }
+  .project-embed {
+    display: none;
+  }
+  .project-mobile-fallback {
+    display: block;
   }
 }
 /* ...add more styles as needed, keep minimal */
