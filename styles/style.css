@@ -136,6 +136,34 @@ section {
   outline: 2px solid #0078d4;
 }
 
+/* Project entry styling */
+.project {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+.project-img {
+  width: 220px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: none;
+}
+.project-info {
+  flex: 1;
+}
+.project-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.project-desc {
+  margin: 0;
+  font-size: 1rem;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -157,6 +185,18 @@ section {
     right: 8%;
     transform: translate(8%, 0);
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  .project-img {
+    width: 100%;
+    max-width: 340px;
   }
 }
 /* ...add more styles as needed, keep minimal */
