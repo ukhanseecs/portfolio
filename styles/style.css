@@ -97,6 +97,29 @@ section {
   z-index: 10;
 }
 
+/* Contact list styling */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact-list li {
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+.contact-list a {
+  color: #0a2342;
+  text-decoration: underline;
+  word-break: break-all;
+}
+.contact-list a:focus,
+.contact-list a:hover {
+  color: #0078d4;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
