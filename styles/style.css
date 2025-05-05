@@ -76,6 +76,21 @@ section {
   outline: none;
 }
 
+/* Home header styling */
+.home-header {
+  position: absolute;
+  top: 3.5%;
+  right: 18%;
+  transform: translate(18%, 0); /* offset toward center */
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #222;
+  background: none;
+  padding: 0.25rem 0.5rem;
+  z-index: 10;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -91,6 +106,12 @@ section {
   }
   .home-links a {
     font-size: 1.1rem;
+  }
+  .home-header {
+    top: 2%;
+    right: 8%;
+    transform: translate(8%, 0);
+    font-size: 1rem;
   }
 }
 /* ...add more styles as needed, keep minimal */
