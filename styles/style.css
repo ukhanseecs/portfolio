@@ -178,6 +178,10 @@ section {
   aspect-ratio: 16 / 9;
   margin: 2.5rem 0 1.5rem 0;
   display: block;
+  border: 2px solid #111; /* minimal black border */
+  border-radius: 12px;
+  box-sizing: border-box;
+  background: #fff;
 }
 .project-embed iframe {
   width: 100%;
@@ -186,6 +190,7 @@ section {
   border-radius: 10px;
   background: #fff;
   min-height: 340px;
+  display: block;
 }
 .project-mobile-fallback {
   display: none;
