@@ -140,24 +140,31 @@ section {
 .project {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin: 2.5rem 0;
+  gap: 2.5rem;
+  margin: 3rem 0;
 }
 .project-img {
-  width: 220px;
+  width: 340px;
+  max-width: 48vw;
   height: auto;
-  max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
   box-shadow: none;
+  flex-shrink: 0;
+  /* Ensures image doesn't shrink on small screens */
 }
 .project-info {
   flex: 1;
+  min-width: 180px;
 }
 .project-title {
   margin: 0 0 0.5rem 0;
   font-size: 1.2rem;
   font-weight: 600;
+}
+.project-title a {
+  color: #000;
+  text-decoration: none;
 }
 .project-desc {
   margin: 0;
@@ -188,15 +195,23 @@ section {
   }
 }
 
+@media (max-width: 900px) {
+  .project-img {
+    width: 260px;
+    max-width: 70vw;
+  }
+}
+
 @media (max-width: 700px) {
   .project {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.2rem;
+    gap: 1.5rem;
   }
   .project-img {
     width: 100%;
-    max-width: 340px;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
   }
 }
 /* ...add more styles as needed, keep minimal */
